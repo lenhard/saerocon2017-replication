@@ -18,3 +18,4 @@ The following files are part of the replication package:
  - `classifiers.R`: R script for computing Naive Bayes classifiers based on the data contained in `data-frame.csv` and searching for an optimal model. Instructions on how to execute the script in a custom environment are given as comments in the code.
  - `computation-results.xlsx`: Result tables of the optimal models found that have been presented in the paper
  - `data-frame`: The raw data (classes, response variables, predictor variables) on which the computation is based
+
