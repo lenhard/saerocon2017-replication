@@ -6,7 +6,7 @@ BibTex entry for the paper:
 ```
 @InProceedings{lenhard2017saerocon,
   author    = {J\"org Lenhard and Mohammad Mahdi Hassan and Martin Blom and Sebastian Herold},
-  title     = {"Are Code Smell Detection Tools Suitable For Detecting Architecture Degradation?},
+  title     = {Are Code Smell Detection Tools Suitable For Detecting Architecture Degradation?},
   booktitle = {11th European Conference on Software Architecture Workshops, 4th Workshop on Software Architecture Erosion and Architectural Consistency (SAEroCon)},
   year      = {2017},
   address   = {Canterbury, UK},
