@@ -1,6 +1,6 @@
 # Replication package for the paper "Are Code Smell Detection Tools Suitable For Detecting Architecture Degradation?"
 
-This study will be published at the 4th Workshop on Software Architecture Erosion and Architectural Consistency (SAEroCon), co-located with the 11th European Conference on Software Architecture (ECSA 2017), in Canterbury, UK, September 11 - 15, 2017.
+This study has been published at the 4th Workshop on Software Architecture Erosion and Architectural Consistency (SAEroCon), co-located with the 11th European Conference on Software Architecture (ECSA 2017), in Canterbury, UK, September 11 - 15, 2017.
 
 BibTex entry for the paper:
 ```
