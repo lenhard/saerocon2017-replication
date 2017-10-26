@@ -6,12 +6,11 @@
 # To perform the computation, load the script in your R environment and adjust it to what you want to compute.
 # Hints on possible adjustments are given as comments in this file.
 
-# First load the data file. You need to adjust the file path to your local environment.
+# First load the data file. This expects that the repository is in your working path. If not, you need to adjust the file path to your local environment.
+data <- read.csv(file=file.path("saerocon2017-replication", "data-frame.csv"), sep=";")
 
-dataFrameFile <- "C:/workspaces/git/saerocon2017-replication/data-frame.csv"
-data <- read.csv(dataFrameFile, sep=";")
-
-# Load the RWeka library (which needs to be installed in your environment) and the build naive bayes classifier
+# Load the RWeka library (which needs to be installed first) and the build naive bayes classifier
+install.packages("RWeka")
 library(RWeka)
 NB <- make_Weka_classifier("weka/classifiers/bayes/NaiveBayes")
 # Set up the vector of metrics used in the analysis

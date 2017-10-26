@@ -18,4 +18,13 @@ The following files are part of the replication package:
  - `classifiers.R`: R script for computing Naive Bayes classifiers based on the data contained in `data-frame.csv` and searching for an optimal model. Instructions on how to execute the script in a custom environment are given as comments in the code.
  - `computation-results.xlsx`: Result tables of the optimal models found that have been presented in the paper
  - `data-frame`: The raw data (classes, response variables, predictor variables) on which the computation is based
+ 
+To reproduce the calculations, simply start your favourite R development environment and open `classifiers.R`. The script assumes that the repository is located on your working path. More instructions on how to interpret the output can be found inside the script.
+
+For convenience, the repository contains a Dockerfile which sets up RStudio in a docker container. The advantage of that is that you do not have to install the environment locally, but can access everthing through your brower. To run this repository inside a container, you need to have Docker installed on your system. If you do, `cd` to the directory of the repository and do the following:
+ - build an image: `docker build -t saerocon2017-replication .`
+ - run the image (RStudio will be available on port 8787): `docker run --rm -p 8787:8787 saerocon2017-replication`
+ - open your browser at http://localhost:8787/ 
+ - RStudio's default credentials are username: `rstudio`, password: `rstudio`
+ - Open `classifiers.R`, read the code and execute it
 
