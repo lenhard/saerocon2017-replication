@@ -1,10 +1,10 @@
-FROM rocker/rstudio:latest
+FROM rocker/rstudio:3.3.2
 MAINTAINER Joerg Lenhard <joerg.lenhard@kau.se>
 	
 COPY /classifiers.R /home/rstudio/saerocon2017-replication/	
 COPY /data-frame.csv /home/rstudio/saerocon2017-replication/	
 	
-# Install dependenceis for getting Weka to work with R
+# Install dependencies for getting Weka to work with R
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libxml2-dev \
   libcairo2-dev \

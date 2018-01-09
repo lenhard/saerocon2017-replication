@@ -24,7 +24,7 @@ To reproduce the calculations, simply start your favourite R development environ
 For convenience, the repository contains a Dockerfile which sets up RStudio in a docker container. The advantage of that is that you do not have to install the environment locally, but can access everthing through your brower. To run this repository inside a container, you need to have Docker installed on your system. If you do, `cd` to the directory of the repository and do the following:
  - build an image: `docker build -t saerocon2017-replication .`
  - run the image (RStudio will be available on port 8787): `docker run --rm -p 8787:8787 saerocon2017-replication`
- - open your browser at http://localhost:8787/ 
+ - open your browser at http://localhost:8787/ (Linux) or http://YOUR-DOCKER-MACHINE-IP:8787/
  - RStudio's default credentials are username: `rstudio`, password: `rstudio`
  - Open `classifiers.R`, read the code and execute it
 
